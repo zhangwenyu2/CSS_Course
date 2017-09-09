@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+    }
+        .red {
+            color:red;
+        }
+        [href] {
+            text-decoration: none;
+        }
+        [class][href] {
+            background-color: #ff0;
+        }
+        [title~=test] {
+            border:1px solid red;
+        }
+        [class^=r] {
+           font-style:italic;
+        }
+        [href$=m] {
+            font-family:"STKaiti";
+        }
+        h1[class*=e] {
+            font-family:"Comic Sans MS";
+        }
+        [title|=test] {
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+<body>
+<a class="red" href="http://www.bing.com" title="test-title">必应</a>
+<h1 class="red">h1...</h1>
+</body>
+</html>

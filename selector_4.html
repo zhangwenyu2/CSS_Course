@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>派生选择器</title>
+    <style>
+        h1 i {  /*如果是h1>i,代表i必须是h1的子元素*/
+            color:#f00;
+        }
+        h2>span {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+<h1><span>hea<i>d</i></span></h1>
+<h2><span>hea<i>d</i></span></h2>
+</body>
+</html>
