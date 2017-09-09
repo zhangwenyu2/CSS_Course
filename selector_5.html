@@ -8,29 +8,54 @@
         margin: 0;
         padding: 0;
     }
-        .red {
-            color:red;
-        }
-        [href] {
+        /*.red {*/
+            /*color:red;*/
+        /*}*/
+        /*[href] {*/
+            /*text-decoration: none;*/
+        /*}*/
+        /*[class][href] {*/
+            /*background-color: #ff0;*/
+        /*}*/
+        /*[title~=test] {   !*必须包含指定完整的词*!*/
+            /*border:1px solid red;*/
+        /*}*/
+        /*[class^=r] {*/
+           /*font-style:italic;*/
+        /*}*/
+        /*[href$=m] {*/
+            /*font-family:"STKaiti";*/
+        /*}*/
+        /*h1[class*=e] {*/
+            /*font-family:"Comic Sans MS";*/
+        /*}*/
+        /*[title|=test] {*/
+            /*text-decoration: line-through;*/
+        /*}*/
+        a {
             text-decoration: none;
+            font-size: 5em;
         }
-        [class][href] {
-            background-color: #ff0;
+        a:link {  /*原始链接背景颜色*/
+            background-color: yellow;
         }
-        [title~=test] {
-            border:1px solid red;
+        a:visited {
+            background-color: cornflowerblue ;
         }
-        [class^=r] {
-           font-style:italic;
+        a:hover {
+            background-color: lightcoral;
         }
-        [href$=m] {
-            font-family:"STKaiti";
+        a:active {
+            background-color: red;
         }
-        h1[class*=e] {
-            font-family:"Comic Sans MS";
+        div:hover {
+            cursor:crosshair; /* 十字*/  }
+        a::before {
+            content:'test';
+            color:whitesmoke;
         }
-        [title|=test] {
-            text-decoration: line-through;
+        input::selection { /*输入信息之后选择信息为黄色背景*/
+            background-color: yellow;
         }
     </style>
 
@@ -38,5 +63,7 @@
 <body>
 <a class="red" href="http://www.bing.com" title="test-title">必应</a>
 <h1 class="red">h1...</h1>
+<div>div...</div>
+<input>
 </body>
 </html>
