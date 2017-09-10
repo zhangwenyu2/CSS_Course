@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+        * {
+            margin:0;
+        }
+        .clear{
+            clear:both;
+        }
+        #container {
+            width:1000px;
+            margin:auto;
+            background-color: #ffccff;
+        }
+        #header {
+            height:200px;
+        }
+        #left {
+            width:300px;
+            background-color: blanchedalmond;
+        }
+        #center {
+            width:400px;
+            background-color: goldenrod;
+        }
+        #right {
+            width:300px;
+            background-color: darkcyan;
+        }
+        #left,
+        #center,
+        #right{
+            float:left;
+            height:500px;
+        }
+
+        #footer {
+            height:300px;
+        }
+        #header,
+        #footer {
+            background-color: lightcoral;
+            color:deepskyblue;
+        }
+       </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">header</div>
+    <div id="content">
+         <div id="left">left</div>
+         <div id="center">center</div>
+         <div id="right">right</div>
+         <div class="clear"></div>
+    </div>
+    <div id="footer">footer</div>
+</div>
+</body>
+</html>
