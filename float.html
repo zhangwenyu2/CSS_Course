@@ -18,24 +18,36 @@
             border:10px dashed #3194d0;
             margin:50px;
             background-color:#ddd;
+            overflow:scroll;
         }
-        #box1 {
-            float:left;
-            background-color: transparent;
-            margin:70px;
-        }
-        #box2 {
-            float: left;
-            background-color: #ffccff;
-        }
-        #box3 {
-            float:left;
-            background-color: #3194d0;
-            border-color: mediumpurple;
-        }
+        /*#box1 {*/
+            /*float:left;*/
+            /*background-color: transparent;*/
+            /*margin:70px;*/
+        /*}*/
+        /*#box2 {*/
+            /*float: left;*/
+            /*background-color: #ffccff;*/
+        /*}*/
+        /*#box3 {*/
+            /*float:left;*/
+            /*background-color: #3194d0;*/
+            /*border-color: mediumpurple;*/
+        /*}*/
         /*.clear {*/
             /*clear:both;*/
         /*}*/
+        #box1 {
+            position:relative; /*默认值是static*/
+            top:100px;
+            /*bottom:;*/
+            /*right:;*/
+            left:100px;
+            z-index: 1;
+        }
+        #box2 {
+            z-index:0;
+        }
     </style>
 </head>
 <body>

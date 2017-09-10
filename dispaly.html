@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        * {
+            margin:0;
+        }
+        .box1,
+        .box2 {
+            display:inline;
+        }
+        .span1,
+        .span2 {
+            display:block;
+        }
+        .box3,
+        .span3 {
+            /*display:none;*/ /*看不见位置也不在了*/
+            visibility:hidden;  /*看不见但是位置还在*/
+        }
+        .inline-block {
+            width:200px;
+            height:100px;
+            display:inline-block; /*对外是行内，对内是块级*/
+
+        }
+        </style>
+</head>
+<body>
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+<span class="span1">span1</span>
+<span class="span2">span2</span>
+<div class="box3">box3</div>
+<span class="span3">span3</span>
+
+<span class="inline-block">span666</span>
+<span class="inline-block">span888</span>
+</body>
+
+</html>
